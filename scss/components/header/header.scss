@@ -1,0 +1,23 @@
+.header {
+    padding: 20px 0 25px;
+    &__content {
+        @include flex(space-between);
+        align-items: center;
+    }
+    menu {
+        list-style: none;
+        @include flex(flex-end);
+    }
+    a {
+        @extend %Lato;
+        font-size: 13.5px;
+        @extend %dis-in-text-transform;
+        padding: 12px 20px;
+        color: $color-header-a;
+    }
+    a:hover {
+        color: $color-white;
+        background-color: $main-color;
+        transition: 0.5s;
+    }
+}

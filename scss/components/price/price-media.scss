@@ -1,0 +1,32 @@
+@include desktop {
+    .price {
+        &__content {
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+@include laptop {
+    .price {
+        &__block {
+            width: 100%;
+            margin: 10px;
+        }
+        &__content {
+            flex-wrap: wrap;
+            padding: 80px 0 85px;
+        }
+        &__text {
+            padding-top: 80px;
+        }
+    }
+}
+
+@include smallmobile {
+    .price {
+        &__block {
+            padding: 20px 0px 40px;
+        }
+    }
+}

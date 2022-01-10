@@ -1,0 +1,20 @@
+               @include laptop {
+                   .header {
+                       &__nav a {
+                           font-size: 12px;
+                           padding: 12px 12px;
+                       }
+                   }
+               }
+               
+               @include tablet {
+                   .header {
+                       &__content {
+                           position: relative;
+                           @include flex(center)
+                       }
+                       &__nav {
+                           display: none;
+                       }
+                   }
+               }

@@ -1,0 +1,93 @@
+.newsletter {
+    text-align: center;
+    padding: 155px 0 0;
+    &__content {
+        border-bottom: 1px solid $content-button;
+        padding: 0 0 60px;
+    }
+    &__text {
+        @extend %Open;
+        text-align: center;
+        padding-bottom: 40px;
+        p {
+            font-size: $font-size-md;
+            font-weight: 300;
+            @extend %t-none-l-normal;
+        }
+    }
+    &__formcontent {
+        @include flex-wrap(center);
+        gap: 11px;
+        padding-bottom: 55px;
+    }
+    &__name {
+        @extend %dis-f-center;
+        width: 308px;
+        input {
+            width: 260px;
+        }
+    }
+    &__email {
+        @extend %dis-f-center;
+        width: 388px;
+        input {
+            width: 328px;
+        }
+    }
+    &__input-bg {
+        background-color: $color-white;
+        border: 1px solid $color-input-bg;
+        height: 47px;
+        border-radius: 3px;
+        img {
+            display: inline-block;
+            padding: 0 15px;
+        }
+    }
+    &__button button {
+        width: 218px;
+        height: 47px;
+        @extend %text;
+        background-color: $main-color;
+        font-size: $font-size-sm;
+        line-height: 1.2;
+        color: $color-white;
+        border-radius: 3px;
+    }
+    &__info {
+        padding-top: 40px;
+        background-image: url(./../images/newsletter/map.png);
+        background-size: 100% 100%;
+        height: 549px;
+    }
+    &__info-wrap {
+        background-image: url(./../images/newsletter/information.png);
+        background-size: 100% 100%;
+        width: 285px;
+        height: 298px;
+        display: inline-block;
+    }
+    &__adress {
+        text-align: center;
+        text-transform: none;
+        @extend %font-f-s-xs;
+        line-height: 24px;
+        padding-top: 65px;
+        h5 {
+            @extend %Lato;
+            font-size: 15px;
+            line-height: 1.2;
+            font-weight: 700;
+            color: $color-white;
+        }
+        p {
+            color: $newsletter-adress;
+        }
+        span {
+            color: $main-color;
+        }
+    }
+    &__logo img {
+        display: inline;
+    }
+}

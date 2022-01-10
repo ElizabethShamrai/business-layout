@@ -1,0 +1,50 @@
+body {
+    @extend %Open;
+    font-size: $font-size-md;
+}
+
+.container {
+    max-width: $content-width;
+    padding: 0 $content-x-padding;
+    margin: 0 auto;
+}
+
+.row {
+    display: block;
+    // display: flex;
+    // flex-wrap: wrap;
+}
+
+h2 {
+    @extend %h2;
+}
+
+@include desktop {
+    .container {
+        max-width: $breakpoint_xl;
+    }
+}
+
+@include laptop {
+    .container {
+        max-width: $breakpoint_lg;
+    }
+}
+
+@include tablet {
+    .container {
+        max-width: $breakpoint_md;
+    }
+}
+
+@include mobile {
+    .container {
+        max-width: $breakpoint_sm;
+    }
+}
+
+@include smallmobile {
+    .container {
+        max-width: $breakpoint_xs;
+    }
+}

@@ -1,0 +1,27 @@
+@include laptop {
+    .clients {
+        &__block-item {
+            display: inline-block;
+        }
+        &__circle-image {
+            padding-left: 80px;
+        }
+    }
+}
+
+@include tablet {
+    .clients {
+        padding: 70px 0 70px;
+        &__block-item {
+            width: 100%;
+        }
+    }
+}
+
+@include mobile {
+    .clients {
+        &__block-item {
+            padding: 10px 20px;
+        }
+    }
+}

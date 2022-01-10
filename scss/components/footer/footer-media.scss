@@ -1,0 +1,15 @@
+@include desktop {
+    .footer {
+        menu {
+            gap: 30px
+        }
+    }
+}
+
+@include laptop {
+    .footer {
+        menu {
+            flex-wrap: wrap;
+        }
+    }
+}

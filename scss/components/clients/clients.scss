@@ -1,0 +1,62 @@
+.clients {
+    background: $main-color;
+    padding: 140px 0 160px;
+    &__text {
+        @extend %Open;
+        color: $color-white;
+        text-align: center;
+        padding-bottom: 60px;
+        p {
+            font-size: $font-size-md;
+        }
+    }
+    h2 {
+        color: $color-white;
+    }
+    &__block {
+        @include flex-wrap(space-between);
+    }
+    .wrap {
+        @extend %dis-f-wrap;
+    }
+    &__block-item {
+        background: $color-white;
+        width: 48%;
+        padding: 45px 40px 50px 30px;
+        margin-bottom: 20px;
+        @extend %dis-flex;
+    }
+    &__circle-image img {
+        max-width: 121px;
+    }
+    &__circle-image {
+        padding-right: 30px;
+    }
+    &__block-wrap {
+        @extend %dis-f-wrap;
+    }
+    &__block-text {
+        p {
+            @extend %font-f-s-xs;
+            line-height: 22px;
+            color: $color-gray;
+            text-indent: -1.2em;
+            padding-bottom: 30px;
+        }
+        sup {
+            @extend %sup-sub;
+        }
+        sub {
+            @extend %sup-sub;
+            padding-left: 80px
+        }
+    }
+    h5 {
+        @extend %font-f-s-transform;
+        line-height: 22px;
+        color: $color-orange;
+        span {
+            color: $color-light-gray;
+        }
+    }
+}

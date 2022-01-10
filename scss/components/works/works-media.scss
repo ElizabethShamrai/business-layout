@@ -1,0 +1,39 @@
+@include tablet {
+    .works {
+        padding: 55px 0 50px;
+        .image-block {
+            display: inline-block;
+            height: 67px;
+            padding-bottom: 90px;
+        }
+        &__text {
+            padding-bottom: 50px;
+        }
+        &__step-item {
+            width: 50%;
+            padding: 0 10px 45px
+        }
+        &__icons {
+            display: none;
+        }
+    }
+}
+
+@include mobile {
+    .works {
+        &__step {
+            display: inline-block;
+        }
+        &__step-item {
+            width: 100%;
+        }
+    }
+}
+
+@include smallmobile {
+    .works {
+        .image-block {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@include desktop {
+    .banner {
+        .container {
+            max-width: $breakpoint_xl;
+        }
+        &__button button {
+            width: 281px;
+            margin: $margin_small;
+        }
+    }
+}
+
+@include laptop {
+    .banner {
+        .container {
+            max-width: $breakpoint_lg;
+        }
+        &__formcontent {
+            @extend %dis-f-wrap;
+            flex-direction: column;
+            align-content: center;
+        }
+        &__input-bg {
+            margin: $margin_small;
+        }
+        &__text {
+            padding: 60px 0 35px 0;
+        }
+    }
+}
+
+@include tablet {
+    .banner {
+        &__text h1 {
+            font-size: $font-size-xl;
+        }
+        &__logo {
+            display: none;
+        }
+        &__form {
+            padding-bottom: 60px;
+        }
+    }
+}

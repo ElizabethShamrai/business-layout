@@ -1,0 +1,19 @@
+@include desktop {
+    .newsletter {
+        &__info {
+            height: 400px;
+        }
+    }
+}
+
+@include laptop {
+    .newsletter {
+        padding: 100px 0 0;
+        &__formcontent input {
+            width: 220px;
+        }
+        &__email {
+            width: 308px;
+        }
+    }
+}

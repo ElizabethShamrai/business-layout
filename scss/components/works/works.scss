@@ -1,0 +1,85 @@
+.works {
+    padding: 155px 0 150px;
+    &__text {
+        padding-bottom: 100px;
+    }
+    .image-block {
+        display: none;
+    }
+    &__text h2 {
+        @extend %text;
+    }
+    &__text p {
+        @extend %Lato;
+        font-size: 18px;
+        font-weight: 300;
+        @extend %t-none-l-normal;
+        @extend %text;
+        color: $color-dark-blue;
+    }
+    &__icons {
+        @include flex(space-around);
+        padding: 0 50px;
+    }
+    &__points-bot {
+        transform: rotate( 180deg);
+        margin-top: 75px;
+    }
+    &__points {
+        &:before {
+            @extend %works-points;
+            background-image: url("./../images/works/triangle.png");
+            margin-left: -7px;
+            margin-bottom: -30px;
+        }
+        &:after {
+            @extend %works-points;
+            background-image: url("./../images/works/trianglecopy.png");
+            margin-top: -4px;
+            margin-left: 107px
+        }
+    }
+    &__points-bot {
+        &:before {
+            @extend %works-points;
+            background-image: url("./../images/works/triangle.png");
+            margin-bottom: -29px;
+            margin-left: -9px;
+        }
+        &:after {
+            @extend %works-points;
+            background-image: url("./../images/works/trianglecopy.png");
+            margin-left: 111px;
+            margin-top: -4px;
+        }
+    }
+    &__step {
+        @include flex-wrap(space-between);
+        align-items: center;
+    }
+    &__step-item {
+        width: 20%;
+        @extend %text;
+        padding: 70px 0 100px;
+        p {
+            text-transform: none;
+            @extend %font-f-s-xs;
+            line-height: 22px;
+            color: $color-gray;
+        }
+        h4 {
+            @extend %Lato;
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 700;
+            color: $color-dark-blue;
+            padding: 0 0 30px;
+        }
+    }
+    &__button {
+        text-align: center;
+        a {
+            @extend %button;
+        }
+    }
+}

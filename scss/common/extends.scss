@@ -1,0 +1,100 @@
+%Open {
+    font-family: $main-font;
+}
+
+%Lato {
+    font-family: $additional-font;
+}
+
+%Gotham {
+    font-family: $third-font;
+}
+
+%h2 {
+    @extend %Gotham;
+    font-size: $font-size-xxl;
+    line-height: 22px;
+    font-weight: 900;
+    letter-spacing: -0.025em;
+    padding-bottom: 5px;
+    color: $color-dark-blue;
+    text-transform: uppercase;
+}
+
+%text {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+%dis-flex {
+    display: flex;
+}
+
+%dis-f-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+%dis-f-center {
+    display: flex;
+    align-items: center;
+}
+
+%button {
+    @extend %Lato;
+    font-size: $font-size-sm;
+    line-height: 1.2;
+    color: $color-white;
+    background-color: $main-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-radius: 2px;
+}
+
+%sup-sub {
+    font-size: 25px;
+    line-height: 22px;
+    color: $color-gray;
+}
+
+%font-f-s-xs {
+    @extend %Open;
+    font-size: $font-size-xs;
+}
+
+%font-f-s-md {
+    @extend %Open;
+    font-size: $font-size-md;
+}
+
+%font-f-s-transform {
+    @extend %Lato;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+}
+
+%font-f-s-uppercase {
+    @extend %Open;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+}
+
+%works-points {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    background-size: 100%;
+}
+
+%t-none-l-normal {
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+%dis-in-text-transform {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}

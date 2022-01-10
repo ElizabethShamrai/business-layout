@@ -1,0 +1,46 @@
+.footer {
+    padding-top: 70px;
+    &__nav {
+        padding-bottom: 30px
+    }
+    menu {
+        list-style: none;
+        @include flex(center);
+        gap: 40px;
+        margin: 0;
+    }
+    a {
+        @extend %Lato;
+        @extend %dis-in-text-transform;
+        line-height: 1.2;
+        color: $color-dark-blue;
+    }
+    &__phone-number {
+        @include flex-wrap(center);
+        gap: 9px;
+    }
+    &__phone img {
+        width: 20px;
+    }
+    &__number p {
+        @extend %Lato;
+        font-size: 22.6px;
+        line-height: 24px;
+        color: $color-dark-blue;
+    }
+    &__logos {
+        text-align: center;
+        padding: 20px 0 50px;
+        a {
+            margin-right: 16px;
+        }
+    }
+    &__text {
+        background-color: $color-bg-blue;
+        @extend %font-f-s-xs;
+        line-height: 24px;
+        color: $color-white;
+        text-align: center;
+        padding: 15px 0 15px;
+    }
+}

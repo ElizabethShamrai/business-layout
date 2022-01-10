@@ -1,0 +1,26 @@
+@include laptop {
+    .services {
+        padding-top: 170px;
+        &__item {
+            padding: 0 0 50px;
+        }
+    }
+}
+
+@include tablet {
+    .services {
+        padding: 30px 0 0;
+        .container {
+            max-width: 700px;
+        }
+        &__maintext {
+            padding-bottom: 40px;
+        }
+        &__flex {
+            display: inline-block;
+        }
+        &__item {
+            width: auto;
+        }
+    }
+}

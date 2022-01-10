@@ -1,0 +1,50 @@
+.about {
+    height: 623px;
+    background: url(./../images/about.png) no-repeat;
+    background-color: $color-bg;
+    background-size: 50% 100%;
+    @extend %dis-f-center;
+    // padding-top: 150px;
+    &__main {
+        @include flex(flex-end);
+    }
+    &__text {
+        width: 50%;
+        color: $color-white;
+        padding-left: 80px;
+    }
+    &__text {
+        p {
+            @extend %Open;
+            padding-bottom: 30px;
+        }
+    }
+    h2 {
+        color: $color-white;
+        padding-bottom: 30px;
+    }
+    &__text h3 {
+        font-size: $font-size-xxl;
+        line-height: 22px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: -0.025em;
+    }
+    &__text p {
+        font-size: $font-size-xs;
+        line-height: 24px;
+    }
+    &__text a {
+        display: inline-block;
+        text-decoration: none;
+        background: none;
+        border: 1px solid $about-text-a;
+        padding: 15px 30px;
+        @extend %font-f-s-transform;
+        color: $color-white;
+    }
+    &__text a:hover {
+        background-color: $about-text-a-hover;
+        transition: 0.3s;
+    }
+}

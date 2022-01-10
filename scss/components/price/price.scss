@@ -1,0 +1,66 @@
+.price {
+    background-color: $color-bright-gray;
+    &__content {
+        @include flex-wrap(space-between);
+        padding: 80px 0 195px;
+    }
+    &__block {
+        background-color: $color-white;
+        transition: 0.3s;
+        padding: 56px 40px 50px;
+        text-align: center;
+        &:hover {
+            background-color: $color-bg-blue;
+            box-shadow: 0px 0px 0px 30px $color-bg-blue;
+            z-index: 1;
+            color: $color-white;
+            & .hover {
+                color: $color-white;
+                font-weight: 300;
+            }
+        }
+    }
+    &__text {
+        text-align: center;
+        padding-top: 140px;
+    }
+    h3 {
+        padding-bottom: 35px;
+        @extend %Lato;
+        font-size: 25px;
+        line-height: 22px;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-silver;
+    }
+    .tariff {
+        @extend %text;
+        @extend %Lato;
+        font-size: 60px;
+        line-height: 22px;
+        font-weight: 700;
+        color: $main-color;
+    }
+    .month {
+        @extend %text;
+        font-weight: 300;
+        color: $color-silver;
+        font-size: 20px;
+        padding: 15px 0 30px;
+    }
+    &__block-bot {
+        @extend %text;
+        @extend %Lato;
+        font-size: 13.5px;
+        line-height: 40px;
+        color: $input-color;
+        padding-bottom: 30px;
+    }
+    &__block-bot p {
+        padding: 0 60px;
+        border-top: 1px solid;
+    }
+    &__block a {
+        @extend %button;
+    }
+}
